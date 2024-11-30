@@ -1,7 +1,9 @@
 # KISS Modular Audio
 
 ## Introduction
-Keep It Simple Stupid (KISS) Modular Audio is a simple guide for constructing electronics for audio signal processing, aimed at DIY.
+Keep It Simple Stupid (KISS) Modular Audio is a guide for constructing a series of modular electronic boards for audio signal processing, aimed at DIY.
+
+<img src="example-module.jpg" alt="Example audio module" width="200"/>
 
 The goal for the project is to provide tools and guides to beginners looking to understand, work with and prototype audio electronics. It also includes [a basic standard](KISS_STANDARD.md) that allows the community to extend the project with additional compatible modules.
 
@@ -53,8 +55,11 @@ Some options:
 - Linear Power Supply Board e.g. https://www.aliexpress.com/item/1005006216905481.html (note - this uses mains voltage, so do not use unless it is properly cased, earthed, protected by RCCB and you are experienced in safely working with mains voltages!)
 
 ## DIY
-Schematics and example prototype board layouts are shared for each module. To assemble, you'll need to buy the electronic components and solder and wire together the modules.
+Schematics and example prototype board layouts are shared for each module. To assemble, you'll need to buy the electronic components and solder and wire together the modules. The prototype board layouts can be used as a construction guide: they are based on 'pad' boards which are prototype boards with individual pads on a 0.1 inch matrix with no copper traces. Yellow lines are used for top of board wiring, and black for wiring underneath the board (either bending and soldering component wires to connect components together, or soldering jumper wires underneath the boards).
 
-The modules are primarily designed to work with consumer computer audio interfaces, and are compatible with any audio interface that has 1 channel line level output and 1 channel line level input.
+The modules are primarily designed to work with consumer computer audio interfaces, and are compatible with any audio interface that has at least 1 channel line level output and 1 channel line level input.
 
-A signal generator and oscilloscope are recommended to identify and fix any issues you have with the modules. You can also use the free [Room Acoustics Software](https://www.roomeqwizard.com/) which can perform signal generation and act as a simple oscilloscope using your audio interface.
+A signal generator and oscilloscope are recommended to identify and fix any issues you have with the modules. You can also use the free [REW Room Acoustics Software](https://www.roomeqwizard.com/) which can perform signal generation and act as a simple oscilloscope using your audio interface.
+
+## Licence
+This project is licenced under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENCE.md) open source licence. This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
