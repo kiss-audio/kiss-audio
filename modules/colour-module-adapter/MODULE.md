@@ -11,3 +11,4 @@ This is a passive module that acts as an interface between KISS modules and the 
 
 ### Design Notes
 - P1 - this is a socket for the 8 pin colour module connector. Note that some additional physical support for the colour module is recommeded, so that when the colour module is placed onto the board it cant flex or bend the pins.
+- LED1-3 - these should be combined into a common cathode RGB LED. shown separately on schematic for clarity.
