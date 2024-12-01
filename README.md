@@ -3,7 +3,7 @@
 ## Introduction
 Keep It Simple Stupid (KISS) Modular Audio is a guide for constructing a series of modular electronic boards for audio signal processing, aimed at DIY.
 
-<img src="example-module.jpg" alt="Example audio module" width="200"/>
+![Example audio modules](modules.jpg)
 
 The goal for the project is to provide tools and guides to beginners looking to understand, work with and prototype audio electronics. It also includes [a basic standard](KISS_STANDARD.md) that allows the community to extend the project with additional compatible modules.
 
