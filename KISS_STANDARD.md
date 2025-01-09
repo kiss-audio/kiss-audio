@@ -21,7 +21,7 @@ The minimal board would have the following characteristics:
 ![Standard Board Layout](standard-layout.jpg)
 
 ### Example
-The [attenuator](modules/attenuator/MODULE.md) reduces the level of the audio signal. 
+The [attenuator](modules/attenuator) reduces the level of the audio signal. 
 
 This example shows the main characteristics of the module:
 - 4 pin socket on left

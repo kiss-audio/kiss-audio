@@ -38,12 +38,12 @@ C-->D[Audio Out];
 
 ### Example chain
 This example amplifies the audio signal and passes it through an audio transformer, which adds some 'warmth' with some natural harmonic frequencies, and then reduces the audio signal again, ready to pass back into the audio output. The modules (from left to right are):
-- [Power Supply](modules/power-supply/MODULE.md)
-- [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in/MODULE.md)
-- [Op Amp](modules/op-amp/MODULE.md)
-- [Audio Transformer 1:1](modules/transformer-1-1/MODULE.md)
-- [Audio Attenuator](modules/attenuator/MODULE.md)
-- [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out/MODULE.md)
+- [Power Supply](modules/power-supply)
+- [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in)
+- [Op Amp](modules/op-amp)
+- [Audio Transformer 1:1](modules/transformer-1-1)
+- [Audio Attenuator](modules/attenuator)
+- [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out)
 
 ![Example chain](example-chain.jpg)
 
