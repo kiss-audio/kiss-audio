@@ -1,7 +1,7 @@
 ## Power Supply Module
 
 ### Purpose
-This module connects the external power supply (+/-16V) to the start of the module chain.
+This module connects an external bipolar power supply (+/-16V) to the start of the module chain.
 
 ### Schematic
 ![alt text](schematic.jpg)

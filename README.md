@@ -20,7 +20,7 @@ This project was originally inspired by the [DIYRE Colour format](https://www.di
 ## Getting Started
 While the boards are modular, and some modules do not require a power supply, most useful circuits will require you to build the following minimal set of components:
 - A +/-16V dual rail power supply with ground, supplying 250mA per rail or greater (not currently included in scope of project, but see below*)
-- The [Power Supply](modules/power-supply) module 
+- The [Power Supply Adapter](modules/power-supply-adapter) module 
 - An Audio Input module, such as the [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in)
 - (Any number of audio processing modules)
 - An Audio Output module, such ash the [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out)
@@ -38,12 +38,12 @@ C-->D[Audio Out];
 
 ### Example chain
 This example amplifies the audio signal and passes it through an audio transformer, which adds some 'warmth' with some natural harmonic frequencies, and then reduces the audio signal again, ready to pass back into the audio output. The modules (from left to right are):
-- [Power Supply](modules/power-supply)
-- [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in)
-- [Op Amp](modules/op-amp)
-- [Audio Transformer 1:1](modules/transformer-1-1)
-- [Audio Attenuator](modules/attenuator)
-- [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out)
+- [Power Supply Adapter](modules/power-supply-adapter/)
+- [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in/)
+- [Op Amp](modules/op-amp/)
+- [Audio Transformer 1:1](modules/transformer-1-1/)
+- [Audio Attenuator](modules/attenuator/)
+- [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out/)
 
 ![Example chain](example-chain.jpg)
 
@@ -51,10 +51,10 @@ This example amplifies the audio signal and passes it through an audio transform
 
 | Category     | Module                                                             | Requires Power | Description                                                                          |
 | ------------ | ------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------ |
-| Power        | [Power Supply](modules/power-supply)                               | Yes            | Provides power on the +/- 16v rails to the module chain                              |
-| Audio In/Out | [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in)    |                | Connects a 1/4 inch unbalanced TS audio jack into to start of the audio signal rail  |
+| Power        | [Power Supply Adapter](modules/power-supply-adapter/)                               | Yes            | Provides power on the +/- 16v rails to the module chain                              |
+| Audio In/Out | [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in/)    |                | Connects a 1/4 inch unbalanced TS audio jack into to start of the audio signal rail  |
 |              | [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out/) |                | Connects a 1/4 inch unbalanced TS audio jack out at the end of the audio signal rail |
-| Signal Gain  | [Op Amp](modules/op-amp)                                           | Yes            | Uses an operational amplifier integrated circuit to amplify the audio signal         |
+| Signal Gain  | [Op Amp](modules/op-amp/)                                           | Yes            | Uses an operational amplifier integrated circuit to amplify the audio signal         |
 |              | [Discrete Op Amp Adapter](modules/discrete-op-amp-adapter/)        | Yes            | Allows an API 2520 compatible Discrete Op Amp to be used to amplify the audio signal |
 |              | [Attenuator](modules/attenuator/)                                  |                | Reduces the audio signal                                                             |
 |              | [Opto Compressor](modules/opto-compressor/)                        | Yes            | Compresses the audio signal                                                          |
@@ -69,7 +69,7 @@ This example amplifies the audio signal and passes it through an audio transform
 While some modules do not require a power supply, most practical audio chains (e.g. those with active components such as amplifiers) will require power, and are designed to work with a +/-16V dual rail power supply with ground. There are lots of DIY options for this, though oddly very few off the shelf solutions. Quality of power supply will vary depending on cost. A cheap simple switching power supply would get you started, but a linear power supply will give better audio performance.
 
 Some options:
-- 24V/1A DC PSU e.g. https://www.amazon.co.uk/dp/B0D7QBHKLG + DC/DC step down module e.g. https://www.aliexpress.com/item/1005005557546986.html / https://www.amazon.co.uk/dp/B082FBXXG3 (recommended for beginners, as the mains components are sealed in the PSU, so you are only dealing with low level voltage)
+- 24V/1A DC PSU e.g. https://www.amazon.co.uk/dp/B0D7QBHKLG + bipolar DC/DC step down module e.g. https://www.aliexpress.com/item/1005005557546986.html / https://www.amazon.co.uk/dp/B082FBXXG3 (recommended for beginners, as the mains components are sealed in the PSU, so you are only dealing with low level voltage)
 - Linear Power Supply Board e.g. https://www.aliexpress.com/item/1005006216905481.html (note - this uses mains voltage, so do not use unless it is properly cased, earthed, protected by RCCB and you are experienced in safely working with mains voltages!)
 
 ## Building the Modules
