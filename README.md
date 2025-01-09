@@ -18,12 +18,12 @@ The aims of the project are:
 This project was originally inspired by the [DIYRE Colour format](https://www.diyrecordingequipment.com/collections/colour), but does not require the cost and overhead of 500 series boards and chassis.
 
 ## Getting Started
-While the boards are modular, and some modules are passive (do not require a power supply), most useful circuits will require you to build the following minimal set of components:
+While the boards are modular, and some modules do not require a power supply, most useful circuits will require you to build the following minimal set of components:
 - A +/-16V dual rail power supply with ground, supplying 250mA per rail or greater (not currently included in scope of project, but see below*)
-- The Power Supply module 
-- The Unbalanced Audio Jack Input module
+- The [Power Supply](modules/power-supply) module 
+- An Audio Input module, such as the [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in)
 - (Any number of audio processing modules)
-- The Unbalanced Audio Jack Output module
+- An Audio Output module, such ash the [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out)
 
 The power supply module is always the left most module. The next module across is typically the audio input module. Other modules are then chained together, and the audio signal flows from left to right. The final module on the right is the audio output.
 
@@ -47,14 +47,31 @@ This example amplifies the audio signal and passes it through an audio transform
 
 ![Example chain](example-chain.jpg)
 
+## Modules
+
+| Category     | Module                                                             | Requires Power | Description                                                                          |
+| ------------ | ------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------ |
+| Power        | [Power Supply](modules/power-supply)                               | Yes            | Provides power on the +/- 16v rails to the module chain                              |
+| Audio In/Out | [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in)    |                | Connects a 1/4 inch unbalanced TS audio jack into to start of the audio signal rail  |
+|              | [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out/) |                | Connects a 1/4 inch unbalanced TS audio jack out at the end of the audio signal rail |
+| Signal Gain  | [Op Amp](modules/op-amp)                                           | Yes            | Uses an operational amplifier integrated circuit to amplify the audio signal         |
+|              | [Discrete Op Amp Adapter](modules/discrete-op-amp-adapter/)        | Yes            | Allows an API 2520 compatible Discrete Op Amp to be used to amplify the audio signal |
+|              | [Attenuator](modules/attenuator/)                                  |                | Reduces the audio signal                                                             |
+| Distortion   | [Diode Clipper](modules/diode-clipper/)                            |                | Distorts the audio waveform using diodes.                                            |
+|              | [FET Clipper](modules/fet-clipper/)                                |                | Distorts the audio waveform using Field Effect Transistors                           |
+|              | [Transformer](modules/transformer-1-1/)                            |                | Distorts the audio waveform using a transformer.                                     |
+|              | [Colour Module Adapter](modules/colour-module-adapter/)            | Yes            | Allows a DIYRE Colour Module to be used to affect the audio signal                   |
+|              |                                                                    |                |                                                                                      |
+
+
 ## *Power Supplies
-The modules require a +/-16V dual rail power supply with ground. There are lots of DIY options for this, though oddly very few off the shelf solutions. Quality of power supply will vary depending on cost. A cheap simple switching power supply would get you started, but a linear power supply will give better audio performance.
+While some modules do not require a power supply, most practical audio chains (e.g. those with active components such as amplifiers) will require power, and are designed to work with a +/-16V dual rail power supply with ground. There are lots of DIY options for this, though oddly very few off the shelf solutions. Quality of power supply will vary depending on cost. A cheap simple switching power supply would get you started, but a linear power supply will give better audio performance.
 
 Some options:
 - 24V/1A DC PSU e.g. https://www.amazon.co.uk/dp/B0D7QBHKLG + DC/DC step down module e.g. https://www.aliexpress.com/item/1005005557546986.html / https://www.amazon.co.uk/dp/B082FBXXG3 (recommended for beginners, as the mains components are sealed in the PSU, so you are only dealing with low level voltage)
 - Linear Power Supply Board e.g. https://www.aliexpress.com/item/1005006216905481.html (note - this uses mains voltage, so do not use unless it is properly cased, earthed, protected by RCCB and you are experienced in safely working with mains voltages!)
 
-## DIY
+## Building the Modules
 Schematics and example prototype board layouts are shared for each module. To assemble, you'll need to buy the electronic components and solder and wire together the modules. The prototype board layouts can be used as a construction guide: they are based on 'pad' boards which are prototype boards with individual pads on a 0.1 inch matrix with no copper traces. Yellow lines are used for top of board wiring, and black for wiring underneath the board (either bending and soldering component wires to connect components together, or soldering jumper wires underneath the boards).
 
 The modules are primarily designed to work with consumer computer audio interfaces, and are compatible with any audio interface that has at least 1 channel line level output and 1 channel line level input.
