@@ -1,7 +1,7 @@
 ## Colour Module Adapter
 
 ### Purpose
-This is a passive module that acts as an interface between KISS modules and the modules that are compatible with the [DIYRE Colour Format](https://www.diyrecordingequipment.com/pages/colour-designer-s-toolkit).
+This module acts as an interface between KISS modules and the modules that are compatible with the [DIYRE Colour Format](https://www.diyrecordingequipment.com/pages/colour-designer-s-toolkit).
 
 ### Schematic
 ![alt text](schematic.jpg)

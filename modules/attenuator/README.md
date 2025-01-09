@@ -1,7 +1,7 @@
 ## Attenuator
 
 ### Purpose
-This is a passive module that reduces the voltage of the audio signal.
+This module that reduces the voltage of the audio signal.
 
 ### Schematic
 ![alt text](schematic.jpg)

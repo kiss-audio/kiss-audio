@@ -1,7 +1,7 @@
 ## Diode Clipper
 
 ### Purpose
-This is a passive module that uses diodes to distort the audio waveform. It is based on the [Mojo Maestro](https://audioxpress.com/article/you-can-diy-build-the-mojo-maestro) design by Ethan Winer.
+This module uses diodes to distort the audio waveform. It is based on the [Mojo Maestro](https://audioxpress.com/article/you-can-diy-build-the-mojo-maestro) design by Ethan Winer.
 
 ### Schematic
 ![alt text](schematic.jpg)

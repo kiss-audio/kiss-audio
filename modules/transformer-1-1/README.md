@@ -1,7 +1,7 @@
 ## Transformer (1:1 ratio)
 
 ### Purpose
-This is a passive module that uses an audio transformer configured in a 1:1 ratio to process the audio signal. An optional 'ground lift' switch is provided which can decouple the output ground circuit from the input
+This module uses an audio transformer configured in a 1:1 ratio to process the audio signal. An optional 'ground lift' switch is provided which can decouple the output ground circuit from the input
 
 ### Schematic
 ![alt text](schematic.jpg)
