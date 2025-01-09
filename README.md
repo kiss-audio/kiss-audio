@@ -57,6 +57,7 @@ This example amplifies the audio signal and passes it through an audio transform
 | Signal Gain  | [Op Amp](modules/op-amp)                                           | Yes            | Uses an operational amplifier integrated circuit to amplify the audio signal         |
 |              | [Discrete Op Amp Adapter](modules/discrete-op-amp-adapter/)        | Yes            | Allows an API 2520 compatible Discrete Op Amp to be used to amplify the audio signal |
 |              | [Attenuator](modules/attenuator/)                                  |                | Reduces the audio signal                                                             |
+|              | [Opto Compressor](modules/opto-compressor/)                        | Yes            | Compresses the audio signal                                                          |
 | Distortion   | [Diode Clipper](modules/diode-clipper/)                            |                | Distorts the audio waveform using diodes.                                            |
 |              | [FET Clipper](modules/fet-clipper/)                                |                | Distorts the audio waveform using Field Effect Transistors                           |
 |              | [Transformer](modules/transformer-1-1/)                            |                | Distorts the audio waveform using a transformer.                                     |
