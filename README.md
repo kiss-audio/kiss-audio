@@ -51,10 +51,12 @@ This example amplifies the audio signal and passes it through an audio transform
 
 | Category     | Module                                                             | Requires Power | Description                                                                          |
 | ------------ | ------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------------------ |
-| Power        | [Power Supply Adapter](modules/power-supply-adapter/)                               | Yes            | Provides power on the +/- 16v rails to the module chain                              |
-| Audio In/Out | [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in/)    |                | Connects a 1/4 inch unbalanced TS audio jack into to start of the audio signal rail  |
+| Power        | [Power Supply Adapter](modules/power-supply-adapter/)              | Yes            | Provides power on the +/- 16v rails to the module chain                              |
+| Audio In/Out | [Unbalanced Audio Jack Input](modules/unbalanced-line-audio-in/)   |                | Connects a 1/4 inch unbalanced TS audio jack into to start of the audio signal rail  |
+|              | [Balanced Audio Jack Input](modules/balanced-line-audio-in/)       | Yes            | Connects a 1/4 inch balanced TRS audio jack into to start of the audio signal rail   |
 |              | [Unbalanced Audio Jack Output](modules/unbalanced-line-audio-out/) |                | Connects a 1/4 inch unbalanced TS audio jack out at the end of the audio signal rail |
-| Signal Gain  | [Op Amp](modules/op-amp/)                                           | Yes            | Uses an operational amplifier integrated circuit to amplify the audio signal         |
+|              | [Balanced Audio Jack Output](modules/balanced-line-audio-out/)     | Yes            | Connects a 1/4 inch balanced TRS audio jack out at the end of the audio signal rail  |
+| Signal Gain  | [Op Amp](modules/op-amp/)                                          | Yes            | Uses an operational amplifier integrated circuit to amplify the audio signal         |
 |              | [Discrete Op Amp Adapter](modules/discrete-op-amp-adapter/)        | Yes            | Allows an API 2520 compatible Discrete Op Amp to be used to amplify the audio signal |
 |              | [Attenuator](modules/attenuator/)                                  |                | Reduces the audio signal                                                             |
 |              | [Opto Compressor](modules/opto-compressor/)                        | Yes            | Compresses the audio signal                                                          |
